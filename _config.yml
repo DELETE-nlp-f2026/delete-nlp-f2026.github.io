@@ -1,0 +1,70 @@
+# INSTRUCTOR-OWNED - yours to edit freely; edits here are not overwritten. Seeded once by
+# the DSL course sync; the keys it owns are named below and rewritten on every run.
+# Edit the fields below for your course - EXCEPT the course-identity keys the DSL
+# course sync owns and rewrites on every run: `collections`, `course_code`, `course_description`, `course_name`, `course_semester`, `dateformat`, `defaults`, `github_org`, `remote_theme`, `title`.
+# Change those in the course org's .github/dsl-course.yml instead.
+
+# --- Course identity ---
+course_name: "Natural Language Processing"
+# The same name under Jekyll's own key, which the theme and the feed fall back to.
+# managed by the DSL course sync - rewritten on every run
+title: "Natural Language Processing"
+course_description: "The course provides a conceptual and applied introduction to Natural Language processing (NLP). The program introduces NLP within the broader fields of Machine Learning and Deep Learning. It will cover core topics such as text representation, text preprocessing, supervised and unsupervised learning with labeled and unlabeled datasets, model evaluations, and emerging trends including using other data sources such as audio and video."
+course_semester: "Fall 2026"
+course_code: "E1282"
+github_org: "DELETE-nlp-f2026"
+
+# --- Institution ---
+schoolname: "Hertie School"
+schoolurl: "https://hertie-school.org/en/datasciencelab"
+dsl_org_url: "https://github.com/hertie-data-science-lab"
+address: |
+    Data Science Lab
+    Hertie School
+    Friedrichstraße 180
+    10117 Berlin, Germany
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+
+baseurl: ""
+url: ""
+
+markdown: kramdown
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images']
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - .bundle
+
+future: true
+
+# managed by the DSL course sync - rewritten on every run
+remote_theme: "hertie-data-science-lab/dsl-jekyll-theme@c33c9b7e471914cb8014a09a12710cb98819e0d9"
+
+# managed by the DSL course sync - rewritten on every run
+dateformat: "%d/%m/%Y"
+
+# managed by the DSL course sync - rewritten on every run
+collections:
+  events:
+    output: true
+  lectures:
+    output: true
+  assignments:
+    output: true
+  announcements:
+    output: false
+
+# managed by the DSL course sync - rewritten on every run
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
