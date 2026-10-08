@@ -14,4 +14,14 @@ due_event:
     subtitle: "Quiz 1"
     submit_shape: "external"
 ---
+{% raw %}
+## Task
 
+_Write the assignment here (dsl-stub: replace this whole file)._
+
+## What to submit
+
+Commit the notebook with its outputs saved, after **Restart kernel and run all**. We read it as it stands, and we run it the same way.
+
+_Say which files you expect back, and in what shape._
+{% endraw %}
