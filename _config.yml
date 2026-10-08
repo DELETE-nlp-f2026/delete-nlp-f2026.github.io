@@ -57,14 +57,9 @@ collections:
   lectures:
     output: true
   assignments:
-    output: true
+    output: false
   announcements:
     output: false
 
 # managed by the DSL course sync - rewritten on every run
-defaults:
-  - scope:
-      path: ""
-      type: "assignments"
-    values:
-      layout: "assignment"
+defaults: []
